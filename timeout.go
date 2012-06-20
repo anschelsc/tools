@@ -33,6 +33,6 @@ func (t *TimeoutConn) Write(b []byte) (int, error) {
 	return t.Write(b)
 }
 
-func (t *TimeoutConn) SetDeadline(_ time.Time) error { return ErrNoDeadlines }
+func (t *TimeoutConn) SetDeadline(_ time.Time) error      { return ErrNoDeadlines }
 func (t *TimeoutConn) SetWriteDeadline(_ time.Time) error { return ErrNoDeadlines }
-func (t *TimeoutConn) SetReadDeadline(_ time.Time) error { return ErrNoDeadlines }
+func (t *TimeoutConn) SetReadDeadline(_ time.Time) error  { return ErrNoDeadlines }
