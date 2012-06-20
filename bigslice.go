@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-const maxLen = math.MaxInt32
+const maxLen = math.MaxInt32 >> 4
 
 type BigSlice struct {
 	data       [][]byte
